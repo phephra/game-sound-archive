@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "NeueMachina-Regular";
+    src: url("assets/fonts/NeueMachina-Regular.otf");
+}
+
+@font-face {
+    font-family: "NeueMachina-Light";
+    src: url("assets/fonts/NeueMachina-Light.otf");
+}
+
+@font-face {
+    font-family: "NeueMachina-Ultrabold";
+    src: url("assets/fonts/NeueMachina-Ultrabold.otf");
+}
+
+/* COLOR */
+
+body {
+    font-family: "NeueMachina-Regular", sans-serif;
+}
+
+.white {
+    color: white !important;
+}
+
+/* WRAPPERS */
+.main-wrapper {
+    position: relative;
+    padding-top: 8rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 100%;
+    z-index: 1 !important;
+    width: 100%;
+    background-color: #fff;
+}
+
+.chapter {
+    margin-top: 1rem;
+    z-index: 1 !important;
+    position: relative;
+    grid-column: 2/11;
+    border-bottom: 2px solid black;
+}
+/* HEADER MENU */
+
+header {
+    z-index: 50 !important;
+    position: absolute;
+}
+
+nav {
+    height: 6rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 50 !important;
+}
+
+header ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: blue;}
+
+ul#navi li {
+    padding: 1.5rem 2rem 2rem 2.5rem;
+    font-family: "NeueMachina-Regular", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+ul#navi .about {
+    top: 0;
+    right: 0.5rem;
+}
+
+/*ACCORDION*/
+
+.accordion {
+    color: #444;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    color: blue !important;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+/*TEXT STYLES*/
+.title-text {
+    font-family: "NeueMachina-Regular", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: black;
+    line-height: 2.8rem;
+    text-transform: uppercase;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/198/eyes_1f440.png">
+    <title>Videogame Sound Semiology</title>
+</head>
+<body>
+        <script>
+            document.body.className += ' fade-out';
+        </script>
+        <header>
+                <nav id="myTopnav">
+                        <ul id="navi" class="topnav">
+                            <li class="about">
+                                <a href="#">About</a>
+                            </li>
+                        </ul>
+                    </nav>
+        </header>
+        <section class="main-wrapper">
+        <div class="chapter">
+            <h1 class="title-text accordion">2. L'espressione musicale nel videogioco</h1>
+            <div class="panel">
+                    <audio id="goose-sound">   
+                        <source src="assets/audio/goose.mp3" />
+                    </audio>
+                    <ul>
+                        <li id="goose">1. Untitled Goose Game</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+            </div>
+        </div>
+        <div class="chapter">
+            <h1 class="title-text accordion">3. L'audio dinamico nel videogioco</h1>
+            <div class="panel">
+                <audio id="mario-sound">   
+                    <source src="assets/audio/mario_jump.mp3" />
+                </audio>
+                <ul>
+                    <li id="mario">Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </div>
+        </div>
+        </section>
+
+</body>
+ <!-- jQuery library -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="script.js"></script>
+<script>
+    toggleAccordion();
+    playSound();
+</script>
+</html>
