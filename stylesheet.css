@@ -17,6 +17,8 @@
 
 body {
     font-family: "NeueMachina-Regular", sans-serif;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .white {
@@ -29,7 +31,6 @@ body {
     padding-top: 8rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    width: 100%;
     z-index: 1 !important;
     width: 100%;
     background-color: #fff;
@@ -39,32 +40,10 @@ body {
     margin-top: 1rem;
     z-index: 1 important!;
     position: relative;
-    grid-column: 2/11;
+    grid-column: 2/12;
     border-bottom: 2px solid black;
 }
 
-/*mp3 player*/
-
-div#mp3_player {
-    width:500px;
-    height:60px;
-    background:#000;
-    padding:5px;
-    margin:50px auto;
-}
-
-div#mp3_player > div > audio {
-    width:500px;
-    background:#000;
-    float:left;
-}
-
-div#mp3_player > canvas {
-    width:500px;
-    height:30px;
-    background:#002D3C;
-    float:left;
-}
 /* HEADER MENU */
 
 header {
@@ -185,11 +164,26 @@ ul#navi .about {
     background-color: black;
     z-index: 1001;
     -moz-opacity: 0;
-    opacity: 0;
+    opacity: 1;
     filter: alpha(opacity=0);
   }
   
   #light {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 600px;
+    max-height: 360px;
+    border: 2px solid #000000;
+    background: #000000;
+    z-index: 1002 !important;
+    overflow: hidden;
+  }
+
+  #light-2{
     display: none;
     position: absolute;
     top: 0;
@@ -216,8 +210,8 @@ ul#navi .about {
     line-height: 0px;
     padding: 11px 3px;
     position: absolute;
-    right: 2px;
-    top: 2px;
+    right: 0;
+    top: 0;
     z-index: 1002;
     opacity: 1;
   }
@@ -233,3 +227,57 @@ ul#navi .about {
   .test:hover ~ .test2 {
     display: none;
   }
+
+  .wip {
+      color: rgb(211, 209, 209);
+  }
+
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /*TEXT STYLES*/
+
+.title-text {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+}
+
+#light {
+    top: 0rem;
+  }
+
+    
+  }
+
+  /* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+    .title-text {
+        font-size: 1.5rem;
+        line-height: 1.9rem;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    .title-text {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+    
+  }
+  

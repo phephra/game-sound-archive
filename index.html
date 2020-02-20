@@ -17,7 +17,7 @@
                 <nav id="myTopnav">
                         <ul id="navi" class="topnav">
                             <li class="thesis">
-                                <a href="#">Video game sound</a>
+                                <a href="#">Website under construction</a>
                             </li>
                             <li class="about">
                                 <a href="#">About</a>
@@ -27,7 +27,7 @@
         </header>
         <section class="main-wrapper">
             <div class="chapter">
-                <h1 class="title-text accordion">1. Il contesto</h1>
+                <h1 class="title-text accordion wip">1. Capitolo 1</h1>
                 <div class="panel">
                     <div>
                         <ol class="sample-list">
@@ -38,46 +38,33 @@
                 </div>
             </div>
         <div class="chapter">
-            <h1 class="title-text accordion">2. L'espressione musicale nel videogioco</h1>
+            <h1 class="title-text accordion">2. L'interazione musicale nel videogioco</h1>
             <div class="panel">
-                <audio id="mario-sound">   
-                    <source src="assets/audio/mario_jump.mp3" />
-                </audio>
-                <audio id="animal-1-sound">   
-                    <source src="assets/audio/animal_crossing_7am.mp3" />
-                </audio>
-                <audio id="animal-2-sound">   
-                    <source src="assets/audio/animal_crossing_12pm.mp3" />
-                </audio>
+                <div id="light-2">
+                    <a class="boxclose" id="boxclose" onclick="stopSound();"></a>
+                    <audio id="audio-file" controls>
+                    </audio> 
+                </div>
                 <div id="light">
                     <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
-                    <video id="goose" width="600" controls>
-                        <source src="assets/video/goose.mp4" type="video/mp4">
-                        <!--Browser does not support <video> tag -->
-                    </video>
-                    <video id="journey" width="600" controls>
-                        <source src="assets/video/journey.mp4" type="video/mp4">
-                        <!--Browser does not support <video> tag -->
-                    </video>
-                    <video id="proteus" width="600" controls>
-                        <source src="assets/video/proteus.mp4" type="video/mp4">
-                        <!--Browser does not support <video> tag -->
+                    <video id="video-file" width="600" controls>
                     </video>
                 </div>
                 <div id="fade" onClick="lightbox_close();"></div>
                 <div>
                     <ol class="sample-list">
-                        <li class="sample-file" id="animal-crossing-1">Hyrule Field Theme</li>
-                        <li class="sample-file" id="animal-crossing-2">Woodtick Theme</li>
-                        <li class="sample-file" onclick="lightbox_open();">Untitled Goose Game</li>
-                        <li class="sample-file" onclick="lightbox_open();">Journey</li>
-                        <li class="sample-file" onclick="lightbox_open();">Proteus</li>
+                        <li class="sample-file" id="hyrule_field_oot" onclick="playSound(this.id);">Hyrule Field Theme</li>
+                        <li class="sample-file" id="monkey" onclick="lightbox_open(this.id);">Woodtick Theme</li>
+                        <li class="sample-file" id="goose" onclick="lightbox_open(this.id);">Preludi modulari in Untitled Goose Game</li>
+                        <li class="sample-file" id="nas" onclick="playSound(this.id);">Nascence</li>
+                        <li class="sample-file" id="journey" onclick="lightbox_open(this.id);">Il crescendo musicale in Journey</li>
+                        <li class="sample-file" id="proteus" onclick="lightbox_open(this.id);">La musica generativa in Proteus</li>
                     </ol>
                 </div>
             </div>
         </div>
         <div class="chapter">
-            <h1 class="title-text accordion">3. Capitolo 3</h1>
+            <h1 class="title-text accordion wip">3. Capitolo 3</h1>
             <div class="panel">
                 <div>
                     <ol class="sample-list">
@@ -88,7 +75,7 @@
             </div>
         </div>
         <div class="chapter">
-            <h1 class="title-text accordion">4. Capitolo 4</h1>
+            <h1 class="title-text accordion wip">4. Capitolo 4</h1>
             <div class="panel">
                 <div>
                     <ol class="sample-list">
@@ -99,7 +86,18 @@
             </div>
         </div>
         <div class="chapter">
-            <h1 class="title-text accordion">5. Capitolo 5</h1>
+            <h1 class="title-text accordion wip">5. Capitolo 5</h1>
+            <div class="panel">
+                <div>
+                    <ol class="sample-list">
+                        <li class="sample-file" id="animal-crossing-1">TBD</li>
+                        <li class="sample-file" id="animal-crossing-2">TBD</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="chapter">
+            <h1 class="title-text accordion wip">6. Capitolo 6</h1>
             <div class="panel">
                 <div>
                     <ol class="sample-list">
@@ -120,6 +118,5 @@
  <script src="script.js"></script>
 <script>
     toggleAccordion();
-    playSound();
 </script>
 </html>
