@@ -64,12 +64,29 @@
             </div>
         </div>
         <div class="chapter">
-            <h1 class="title-text accordion wip">3. Capitolo 3</h1>
+            <h1 class="title-text accordion">3. Le funzioni musicali</h1>
             <div class="panel">
+                <div id="light-2">
+                    <a class="boxclose" id="boxclose" onclick="stopSound();"></a>
+                    <audio id="audio-file" controls>
+                    </audio> 
+                </div>
+                <div id="light">
+                    <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+                    <video id="video-file" width="600" controls>
+                    </video>
+                </div>
+                <div id="fade" onClick="lightbox_close();"></div>
                 <div>
                     <ol class="sample-list">
-                        <li class="sample-file" id="animal-crossing-1">TBD</li>
-                        <li class="sample-file" id="animal-crossing-2">TBD</li>
+                        <li class="sample-file" id="yoshi" onclick="playSound(this.id);">Koji Kondo, Flower Garden</li>
+                        <li class="sample-file" id="child_of_light_1" onclick="playSound(this.id)";>Cœur de pirate, Pilgrims On a Long Journey</li>
+                        <li class="sample-file" id="silent_hill" onclick="playSound(this.id);">Akira Yamahoka, TBD</li>
+                        <li class="sample-file" id="ds1_firelink" onclick="playSound(this.id);">Motoi Sakuraba, Firelink Shrine</li>
+                        <li class="sample-file" id="shadow_of_the_colossus" onclick="playSound(this.id);">Kow Otani, End of the Battle</li>
+                        <li class="sample-file" id="okami" onclick="playSound(this.id);">Masami Ueda, Princess Sakuya's Theme</li>
+                        <li class="sample-file" id="ds1_gwyn" onclick="playSound(this.id);">Motoi Sakuraba, Gwyn, Lord of Cinder</li>
+                        <li class="sample-file" id="ds3_soul_of_cinder" onclick="playSound(this.id);">Motoi Sakuraba, Soul of Cinder</li>
                     </ol>
                 </div>
             </div>
