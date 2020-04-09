@@ -73,15 +73,15 @@ header ul li a {
 
 header ul li a:hover {
     text-decoration: none;
-    color: blue;
+    color: #003b7a;
 
 }
 
 ul#navi li {
     padding: 1rem 2rem 1rem 0rem;
-    font-family: "NeueMachina-Regular", sans-serif;
+    font-family: "NeueMachina-Light", sans-serif;
     font-size: 1.5rem;
-    font-weight: 400;
+    color: #003b7a;
 }
 ul#navi .thesis {
     top: 0;
@@ -108,7 +108,7 @@ ul#navi .about {
 }
 
 .sample-file:hover {
-    color: blue;
+    color: #003b7a;
 }
 
 /*ACCORDION*/
@@ -120,7 +120,7 @@ ul#navi .about {
   }
   
  .accordion:hover {
-    color: blue !important;
+    color: #003b7a !important;
   }
 
   .accordion:after {
@@ -150,6 +150,14 @@ ul#navi .about {
     color: black;
     line-height: 2.8rem;
     text-transform: uppercase;
+}
+
+.track {
+  font-family: "NeueMachina-Ultrabold", sans-serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #003b7a;
+  letter-spacing: 0.1rem;
 }
 
 /*VIDEO*/

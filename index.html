@@ -7,7 +7,7 @@
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/198/eyes_1f440.png">
-    <title>Videogame Sound Semiology</title>
+    <title>Partitura ludica</title>
 </head>
 <body>
         <script>
@@ -17,7 +17,7 @@
                 <nav id="myTopnav">
                         <ul id="navi" class="topnav">
                             <li class="thesis">
-                                <a href="#">Website under construction</a>
+                                <a href="#">Partitura ludica</a>
                             </li>
                             <li class="about">
                                 <a href="#">About</a>
@@ -27,12 +27,21 @@
         </header>
         <section class="main-wrapper">
             <div class="chapter">
-                <h1 class="title-text accordion wip">1. Capitolo 1</h1>
+                <h1 class="title-text accordion">1. Il linguaggio musicale</h1>
                 <div class="panel">
                     <div>
                         <ol class="sample-list">
-                            <li class="sample-file" id="animal-crossing-1">TBD</li>
-                            <li class="sample-file" id="animal-crossing-2">TBD</li>
+                            <li class="sample-file" id="animal_crossing_12pm" onclick="playSound(this.id);"><span class="track">12PM</span> (Animal Crossing: New Leaf), Manaka Kataoka</li>
+                            <li class="sample-file" id="animal_crossing_7am" onclick="playSound(this.id);"><span class="track">7AM</span> (Animal Crossing: New Leaf), Manaka Kataoka</li>
+                            <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">Boss Battle</span> (The Legend of Zelda: Ocarina of Time), Koji Kondo</li>
+                            <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">Boss Clear</span> (The Legend of Zelda: Ocarina of Time), Koji Kondo</li>
+                            <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">Victory</span> (The Legend of Zelda: Ocarina of Time), Koji Kondo</li>
+                            <li class="sample-file" id="hyrule_field_oot" onclick="playSound(this.id);"><span class="track">Hyrule Field</span> (The Legend of Zelda: Ocarina of Time), Koji Kondo</li>
+                            <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">Item Catch</span> (The Legend of Zelda: Ocarina of Time), Koji Kondo</li>
+                            <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">Overworld Theme</span> (The Legend of Zelda), Koji Kondo</li>
+                            <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Jump (1)</span> (Super Mario Brothers), Koji Kondo</li>
+                            <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">Jump (2)</span> (Super Mario Brothers), Koji Kondo</li>
+                            <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">Death Cadence</span> (Super Mario Brothers), Koji Kondo</li>
                         </ol>
                     </div>
                 </div>
@@ -53,18 +62,18 @@
                 <div id="fade" onClick="lightbox_close();"></div>
                 <div>
                     <ol class="sample-list">
-                        <li class="sample-file" id="hyrule_field_oot" onclick="playSound(this.id);">Hyrule Field Theme</li>
-                        <li class="sample-file" id="monkey" onclick="lightbox_open(this.id);">Woodtick Theme</li>
-                        <li class="sample-file" id="goose" onclick="lightbox_open(this.id);">Preludi modulari in Untitled Goose Game</li>
-                        <li class="sample-file" id="nas" onclick="playSound(this.id);">Nascence</li>
-                        <li class="sample-file" id="journey" onclick="lightbox_open(this.id);">Il crescendo musicale in Journey</li>
-                        <li class="sample-file" id="proteus" onclick="lightbox_open(this.id);">La musica generativa in Proteus</li>
+                        <li class="sample-file" id="hyrule_field_oot" onclick="playSound(this.id);"><span class="track">Hyrule Field</span> (The Legend of Zelda: Ocarina of Time), Koji Kondo</li>
+                        <li class="sample-file" id="monkey" onclick="lightbox_open(this.id);"><span class="track">Woodtick Theme</span> (Monkey Island 2: LeChuck's Revenge), Michael Land, Peter McConnell, Clint Bajakan</li>
+                        <li class="sample-file" id="goose" onclick="lightbox_open(this.id);"><span class="track">Prelude</span> (Untitled Goose Game), Dan Golding</li>
+                        <li class="sample-file" id="nas" onclick="playSound(this.id);"><span class="track">Nascence</span> (Journey), Austin Wintory</li>
+                        <li class="sample-file" id="journey" onclick="lightbox_open(this.id);"><span class="track">Threshold</span> (Journey), Austin Wintory</li>
+                        <li class="sample-file" id="proteus" onclick="lightbox_open(this.id);"><span class="track">Summer</span> (Proteus), David Kanaga</li>
                     </ol>
                 </div>
             </div>
         </div>
         <div class="chapter">
-            <h1 class="title-text accordion">3. Le funzioni musicali</h1>
+            <h1 class="title-text accordion">3. Le funzioni musicali nel videogioco</h1>
             <div class="panel">
                 <div id="light-2">
                     <a class="boxclose" id="boxclose" onclick="stopSound();"></a>
@@ -79,47 +88,100 @@
                 <div id="fade" onClick="lightbox_close();"></div>
                 <div>
                     <ol class="sample-list">
-                        <li class="sample-file" id="yoshi" onclick="playSound(this.id);">Koji Kondo, Flower Garden</li>
-                        <li class="sample-file" id="child_of_light_1" onclick="playSound(this.id)";>Cœur de pirate, Pilgrims On a Long Journey</li>
-                        <li class="sample-file" id="silent_hill" onclick="playSound(this.id);">Akira Yamahoka, TBD</li>
-                        <li class="sample-file" id="ds1_firelink" onclick="playSound(this.id);">Motoi Sakuraba, Firelink Shrine</li>
-                        <li class="sample-file" id="shadow_of_the_colossus" onclick="playSound(this.id);">Kow Otani, End of the Battle</li>
-                        <li class="sample-file" id="okami" onclick="playSound(this.id);">Masami Ueda, Princess Sakuya's Theme</li>
-                        <li class="sample-file" id="ds1_gwyn" onclick="playSound(this.id);">Motoi Sakuraba, Gwyn, Lord of Cinder</li>
-                        <li class="sample-file" id="ds3_soul_of_cinder" onclick="playSound(this.id);">Motoi Sakuraba, Soul of Cinder</li>
+                        <li class="sample-file" id="yoshi" onclick="playSound(this.id);"><span class="track">Flower Garden</span> (Yoshi's Island), Koji Kondo</li>
+                        <li class="sample-file" id="silent_hill" onclick="playSound(this.id);"><span class="track">Moonchild</span> (Silent Hill), Akira Yamaoka</li>
+                        <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">Overworld Theme</span> (Super Mario Brothers), Koji Kondo</li>
+                        <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">Underworld Theme</span> (Super Mario Brothers), Koji Kondo</li>
+                        <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">Underwater Theme</span> (Super Mario Brothers), Koji Kondo</li>
+                        <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">Castle Theme</span> (Super Mario Brothers), Koji Kondo</li>
+                        <li class="sample-file" id="child_of_light_1" onclick="playSound(this.id);"><span class="track">Aurora's Theme</span> (Child of Light), Cœur de pirate</li>
+                        <li class="sample-file" id="child_of_light_1" onclick="playSound(this.id);"><span class="track">The Girl and the Firefly</span> (Child of Light), Cœur de pirate</li>
+                        <li class="sample-file" id="child_of_light_1" onclick="playSound(this.id);"><span class="track">Pilgrims On a Long Journey</span> (Child of Light), Cœur de pirate</li>
+                        <li class="sample-file" id="child_of_light_1" onclick="playSound(this.id);"><span class="track">From a Flock of Crows</span> (Child of Light), Cœur de pirate</li>
+                        <li class="sample-file" id="minecraft_1" onclick="playSound(this.id);"><span class="track">Sweden</span> (Minecraft), C418</li>
+                        <li class="sample-file" id="shadow_of_the_colossus" onclick="playSound(this.id);"><span class="track">Green Hills</span> (Shadow of the Colossus), Kow Otani</li>
+                        <li class="sample-file" id="shadow_of_the_colossus" onclick="playSound(this.id);"><span class="track">Revived Power</span> (Shadow of the Colossus), Kow Otani</li>
+                        <li class="sample-file" id="shadow_of_the_colossus" onclick="playSound(this.id);"><span class="track">End of the Battle</span> (Shadow of the Colossus), Kow Otani</li>
+                        <li class="sample-file" id="okami" onclick="playSound(this.id);"><span class="track">Princess Sakuya's Theme</span> (Okami), Masami Ueda</li>
+                        <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">Zelda's Lullaby</span> (The Legend of Zelda: Ocarina of Time), Koji Kondo</li>
+                        <li class="sample-file" id="ds1_gwyn" onclick="playSound(this.id);"><span class="track">Gwyn, Lord of Cinder</span> (Dark Souls), Motoi Sakuraba</li>
+                        <li class="sample-file" id="ds3_soul_of_cinder" onclick="playSound(this.id);"><span class="track">Soul of Cinder</span> (Dark Souls III), Motoi Sakuraba</li>  
+                        <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">Overworld Theme (2)</span> (Super Mario Brothers), Koji Kondo</li>
+                        <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">Victory</span> (Super Mario Brothers), Koji Kondo</li>
+                        <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">Saria's Song</span> (The Legend of Zelda: Ocarina of Time), Koji Kondo</li>
+                        <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">The Lost Woods</span> (The Legend of Zelda: Ocarina of Time), Koji Kondo</li>
+                        <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">I'm Yours Forever</span> (Tetris Effect), Noboru Mutoh</li>
+                        <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">Dragon Roost Island</span> (The Legend of Zelda: The Wind Waker), Kenta Nagata, Hajime Wakai, Toru Minegishi, Koji Kondo</li>  
+                </div>
+            </div>
+        </div>
+        <div class="chapter">
+            <h1 class="title-text accordion">4. L'analisi paradigmatica</h1>
+            <div class="panel">
+                <div>
+                    <ol class="sample-list">
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Jump Up, Super Star!</span> (Super Mario Odyssey), Naoto Kubo</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Break Free (Lead the Way)</span> (Super Mario Odyssey), Naoto Kubo</li>
+                        <li class="sample-file" id="ds1_firelink" onclick="playSound(this.id);"><span class="track">The Ancient Dragon</span> (Dark Souls), Motoi Sakuraba</li>
+                        <li class="sample-file" id="ds1_firelink" onclick="playSound(this.id);"><span class="track">Gwynevere, Princess of Sunlight</span> (Dark Souls), Motoi Sakuraba</li>
+                        <li class="sample-file" id="ds1_firelink" onclick="playSound(this.id);"><span class="track">Firelink Shrine</span> (Dark Souls), Motoi Sakuraba</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Mount Wario</span> (Mario Kart 8), Shiho Fuji</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Super Star</span> (Mario Kart 8), Shiho Fuji</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Low Score Placement</span> (Mario Kart 8), Shiho Fuji</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">America (The Ancient Era)</span> (Civilization VI), Geoff Knorr</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">America (The Industrial Era)</span> (Civilization VI), Geoff Knorr</li>
                     </ol>
                 </div>
             </div>
         </div>
         <div class="chapter">
-            <h1 class="title-text accordion wip">4. Capitolo 4</h1>
+            <h1 class="title-text accordion">5. The Legend of Zelda: Breath of the Wild</h1>
             <div class="panel">
                 <div>
                     <ol class="sample-list">
-                        <li class="sample-file" id="animal-crossing-1">TBD</li>
-                        <li class="sample-file" id="animal-crossing-2">TBD</li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-        <div class="chapter">
-            <h1 class="title-text accordion wip">5. Capitolo 5</h1>
-            <div class="panel">
-                <div>
-                    <ol class="sample-list">
-                        <li class="sample-file" id="animal-crossing-1">TBD</li>
-                        <li class="sample-file" id="animal-crossing-2">TBD</li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-        <div class="chapter">
-            <h1 class="title-text accordion wip">6. Capitolo 6</h1>
-            <div class="panel">
-                <div>
-                    <ol class="sample-list">
-                        <li class="sample-file" id="animal-crossing-1">TBD</li>
-                        <li class="sample-file" id="animal-crossing-2">TBD</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Opening</span> (The Legend of Zelda: Breath of the Wild), Manaka Kataoka</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">The Last King of Hyrule</span> (The Legend of Zelda: Breath of the Wild), Manaka Kataoka</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">The Story of Calamity Ganon (1 - 5)</span> (The Legend of Zelda: Breath of the Wild), Manaka Kataoka, Hajime Wakai</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">A King's Request</span> (The Legend of Zelda: Breath of the Wild), Manaka Kataoka</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Field (Day)</span> (The Legend of Zelda: Breath of the Wild), Manaka Kataoka</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Stables</span> (The Legend of Zelda: Breath of the Wild), Yasuaki Iwata</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Kakariko Village</span> (The Legend of Zelda: Breath of the Wild), Manaka Kataoka</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Gerudo Town (Day)</span> (The Legend of Zelda: Breath of the Wild), Yasuaki Iwata</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Gerudo Town (Night)</span> (The Legend of Zelda: Breath of the Wild), Yasuaki Iwata</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Zora's Domain (Day)</span> (The Legend of Zelda: Breath of the Wild), Yasuaki Iwata</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Zora's Domain (Night)</span> (The Legend of Zelda: Breath of the Wild), Yasuaki Iwata</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Goron Citadel (Day)</span> (The Legend of Zelda: Breath of the Wild), Yasuaki Iwata</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Goron Citadel (Night)</span> (The Legend of Zelda: Breath of the Wild), Yasuaki Iwata</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Rito Village (Day)</span> (The Legend of Zelda: Breath of the Wild), Yasuaki Iwata</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Rito Village (Kass and Five Sisters Version)</span> (The Legend of Zelda: Breath of the Wild), Yasuaki Iwata</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Hateno Village</span> (The Legend of Zelda: Breath of the Wild), Yasuaki Iwata</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Tarrey Town (Empty)</span> (The Legend of Zelda: Breath of the Wild), Manaka Kataoka</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Tarrey Town (Complete)</span> (The Legend of Zelda: Breath of the Wild), Manaka Kataoka</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Battle (Field) (1)</span> (The Legend of Zelda: Breath of the Wild), Manaka Kataoka</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Battle (Field) (2)</span> (The Legend of Zelda: Breath of the Wild), Manaka Kataoka</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Guardian Battle</span> (The Legend of Zelda: Breath of the Wild), Manaka Kataoka</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Resurrecting Memory</span> (The Legend of Zelda: Breath of the Wild), Manaka Kataoka</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Divine Beast Vah Medoh (1)</span> (The Legend of Zelda: Breath of the Wild), Yasuaki Iwata</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Divine Beast Vah Medoh (2)</span> (The Legend of Zelda: Breath of the Wild), Yasuaki Iwata</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Divine Beast Vah Medoh (3)</span> (The Legend of Zelda: Breath of the Wild), Yasuaki Iwata</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Divine Beast Vah Ruta</span> (The Legend of Zelda: Breath of the Wild), Yasuaki Iwata</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Thunderblight Ganon Battle</span> (The Legend of Zelda: Breath of the Wild), Yasuaki Iwata</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Shrine</span> (The Legend of Zelda: Breath of the Wild), Yasuaki Iwata</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Battle (Shrine)</span> (The Legend of Zelda: Breath of the Wild), Manaka Kataoka</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Hyrule Castle (Outside)</span> (The Legend of Zelda: Breath of the Wild), Manaka Kataoka</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Hyrule Castle (Inside)</span> (The Legend of Zelda: Breath of the Wild), Manaka Kataoka</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Calamity Ganon Battle (Phase 1)</span> (The Legend of Zelda: Breath of the Wild), Yasuaki Iwata</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Calamity Ganon Battle (Phase 2)</span> (The Legend of Zelda: Breath of the Wild), Yasuaki Iwata</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Dark Beast Ganon Battle (1)</span> (The Legend of Zelda: Breath of the Wild), Manaka Kataoka</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Dark Beast Ganon Battle (2)</span> (The Legend of Zelda: Breath of the Wild), Manaka Kataoka</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Dark Beast Ganon Battle (3)</span> (The Legend of Zelda: Breath of the Wild), Manaka Kataoka</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Great Fairy's Fountain</span> (The Legend of Zelda: Breath of the Wild), Yasuaki Iwata</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Malanaya's Fountain</span> (The Legend of Zelda: Breath of the Wild), Yasuaki Iwata</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Riding (Day)</span> (The Legend of Zelda: Breath of the Wild), Manaka Kataoka</li>
+                        <li class="sample-file" id="botw_sheikah_slate" onclick="playSound(this.id);"><span class="track">Strengthening the Sheikah Slate</span> (The Legend of Zelda: Breath of the Wild), Manaka Kataoka</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Talus Battle</span> (The Legend of Zelda: Breath of the Wild), Manaka Kataoka</li>
+                        <li class="sample-file" id="botw_kass" onclick="playSound(this.id);"><span class="track">Kass' Theme</span> (The Legend of Zelda: Breath of the Wild), Yasuaki Iwata</li>
+                        <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Omen of the Blood Moon</span> (The Legend of Zelda: Breath of the Wild), Manaka Kataoka</li>
                     </ol>
                 </div>
             </div>
