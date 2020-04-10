@@ -29,14 +29,26 @@
             <div class="chapter">
                 <h1 class="title-text accordion">1. Il linguaggio musicale</h1>
                 <div class="panel">
+                    <div id="light-2">
+                        <a class="boxclose" id="boxclose" onclick="stopSound();"></a>
+                        <img id="imago-file" width="600"></img>
+                        <audio id="audio-file" controls>
+                        </audio> 
+                    </div>
+                    <div id="light">
+                        <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+                        <video id="video-file" width="600" controls>
+                        </video>
+                    </div>
+                    <div id="fade" onClick="lightbox_close();"></div>
                     <div>
                         <ol class="sample-list">
                             <li class="sample-file" id="animal_crossing_12pm" onclick="playSound(this.id);"><span class="track">12PM</span> (Animal Crossing: New Leaf), Manaka Kataoka</li>
                             <li class="sample-file" id="animal_crossing_7am" onclick="playSound(this.id);"><span class="track">7AM</span> (Animal Crossing: New Leaf), Manaka Kataoka</li>
                             <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">Boss Battle</span> (The Legend of Zelda: Ocarina of Time), Koji Kondo</li>
-                            <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">Boss Clear</span> (The Legend of Zelda: Ocarina of Time), Koji Kondo</li>
+                            <li class="sample-file" id="oot_boss_clear" onclick="playSound(this.id);"><span class="track">Boss Clear</span> (The Legend of Zelda: Ocarina of Time), Koji Kondo</li>
                             <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">Victory</span> (The Legend of Zelda: Ocarina of Time), Koji Kondo</li>
-                            <li class="sample-file" id="hyrule_field_oot" onclick="playSound(this.id);"><span class="track">Hyrule Field</span> (The Legend of Zelda: Ocarina of Time), Koji Kondo</li>
+                            <li class="sample-file" id="oot_hyrule_field" onclick="playSound(this.id);"><span class="track">Hyrule Field</span> (The Legend of Zelda: Ocarina of Time), Koji Kondo</li>
                             <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">Item Catch</span> (The Legend of Zelda: Ocarina of Time), Koji Kondo</li>
                             <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">Overworld Theme</span> (The Legend of Zelda), Koji Kondo</li>
                             <li class="sample-file" id="mario_jump_1" onclick="playSound(this.id);"><span class="track">Jump (1)</span> (Super Mario Brothers), Koji Kondo</li>
@@ -62,7 +74,7 @@
                 <div id="fade" onClick="lightbox_close();"></div>
                 <div>
                     <ol class="sample-list">
-                        <li class="sample-file" id="hyrule_field_oot" onclick="playSound(this.id);"><span class="track">Hyrule Field</span> (The Legend of Zelda: Ocarina of Time), Koji Kondo</li>
+                        <li class="sample-file" id="oot_hyrule_field" onclick="playSound(this.id);"><span class="track">Hyrule Field</span> (The Legend of Zelda: Ocarina of Time), Koji Kondo</li>
                         <li class="sample-file" id="monkey" onclick="lightbox_open(this.id);"><span class="track">Woodtick Theme</span> (Monkey Island 2: LeChuck's Revenge), Michael Land, Peter McConnell, Clint Bajakan</li>
                         <li class="sample-file" id="goose" onclick="lightbox_open(this.id);"><span class="track">Prelude</span> (Untitled Goose Game), Dan Golding</li>
                         <li class="sample-file" id="nas" onclick="playSound(this.id);"><span class="track">Nascence</span> (Journey), Austin Wintory</li>
@@ -90,10 +102,10 @@
                     <ol class="sample-list">
                         <li class="sample-file" id="yoshi" onclick="playSound(this.id);"><span class="track">Flower Garden</span> (Yoshi's Island), Koji Kondo</li>
                         <li class="sample-file" id="silent_hill" onclick="playSound(this.id);"><span class="track">Moonchild</span> (Silent Hill), Akira Yamaoka</li>
-                        <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">Overworld Theme</span> (Super Mario Brothers), Koji Kondo</li>
-                        <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">Underworld Theme</span> (Super Mario Brothers), Koji Kondo</li>
-                        <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">Underwater Theme</span> (Super Mario Brothers), Koji Kondo</li>
-                        <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">Castle Theme</span> (Super Mario Brothers), Koji Kondo</li>
+                        <li class="sample-file" id="mario_bros_overworld" onclick="playSound(this.id);"><span class="track">Overworld Theme</span> (Super Mario Brothers), Koji Kondo</li>
+                        <li class="sample-file" id="mario_bros_underworld" onclick="playSound(this.id);"><span class="track">Underworld Theme</span> (Super Mario Brothers), Koji Kondo</li>
+                        <li class="sample-file" id="mario_bros_underwater" onclick="playSound(this.id);"><span class="track">Underwater Theme</span> (Super Mario Brothers), Koji Kondo</li>
+                        <li class="sample-file" id="mario_bros_castle" onclick="playSound(this.id);"><span class="track">Castle Theme</span> (Super Mario Brothers), Koji Kondo</li>
                         <li class="sample-file" id="child_of_light_1" onclick="playSound(this.id);"><span class="track">Aurora's Theme</span> (Child of Light), Cœur de pirate</li>
                         <li class="sample-file" id="child_of_light_1" onclick="playSound(this.id);"><span class="track">The Girl and the Firefly</span> (Child of Light), Cœur de pirate</li>
                         <li class="sample-file" id="child_of_light_1" onclick="playSound(this.id);"><span class="track">Pilgrims On a Long Journey</span> (Child of Light), Cœur de pirate</li>
@@ -106,10 +118,10 @@
                         <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">Zelda's Lullaby</span> (The Legend of Zelda: Ocarina of Time), Koji Kondo</li>
                         <li class="sample-file" id="ds1_gwyn" onclick="playSound(this.id);"><span class="track">Gwyn, Lord of Cinder</span> (Dark Souls), Motoi Sakuraba</li>
                         <li class="sample-file" id="ds3_soul_of_cinder" onclick="playSound(this.id);"><span class="track">Soul of Cinder</span> (Dark Souls III), Motoi Sakuraba</li>  
-                        <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">Overworld Theme (2)</span> (Super Mario Brothers), Koji Kondo</li>
+                        <li class="sample-file" id="mario_bros_overworld_2" onclick="playSound(this.id);"><span class="track">Overworld Theme (2)</span> (Super Mario Brothers), Koji Kondo</li>
                         <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">Victory</span> (Super Mario Brothers), Koji Kondo</li>
-                        <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">Saria's Song</span> (The Legend of Zelda: Ocarina of Time), Koji Kondo</li>
-                        <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">The Lost Woods</span> (The Legend of Zelda: Ocarina of Time), Koji Kondo</li>
+                        <li class="sample-file" id="oot_saria_song" onclick="playSound(this.id);"><span class="track">Saria's Song</span> (The Legend of Zelda: Ocarina of Time), Koji Kondo</li>
+                        <li class="sample-file" id="oot_lost_woods" onclick="playSound(this.id);"><span class="track">Lost Woods</span> (The Legend of Zelda: Ocarina of Time), Koji Kondo</li>
                         <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">I'm Yours Forever</span> (Tetris Effect), Noboru Mutoh</li>
                         <li class="sample-file" id="animal-crossing-2" onclick="playSound(this.id);"><span class="track">Dragon Roost Island</span> (The Legend of Zelda: The Wind Waker), Kenta Nagata, Hajime Wakai, Toru Minegishi, Koji Kondo</li>  
                 </div>

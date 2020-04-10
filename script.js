@@ -38,6 +38,7 @@ function addSource (element, src, type) {
 
 var lightBoxVideo = document.getElementById("video-file");
 var audioSound = document.getElementById("audio-file");
+var immagine = document.getElementById("imago-file");
 
 // Funzioni che aprono e chiudono la sovrimpressione audio/video
 
@@ -64,8 +65,10 @@ function lightbox_open(clicked_id) {
 function playSound(clicked_id) {
     console.log("L'ID di questo elemento è " + clicked_id);
     var audio = "assets/audio/" + clicked_id + ".mp3";
+    //var imago = "assets/img/" + clicked_id + ".jpg";
     window.scrollTo(0, 0);
     addSource(audioSound, audio, 'audio/mpeg');
+    //addSource(immagine, imago, 'image/jpeg');
     document.getElementById("light-2").style.display = 'block';
     document.getElementById('fade').style.display = 'block';
     audioSound.play();
